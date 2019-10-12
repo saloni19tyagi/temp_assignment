@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham', 'Gotham Book', Roboto, Arial, sans-serif;
+    color: #455A64;
+    background: #eeeff3;
+}
+
+input, button, textarea {
+    outline: none;
+    font-family: 'Gotham', 'Gotham Book', Roboto, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pointer-ele {
+    cursor: pointer;
+}
+
+
+h1, h2 {
+    color: #1d1c2e;
+}
+
+.heading {
+    font-size: 3.4rem;
+}
+
+.subheading {
+    color: #5d35b1;
+}
+.custome-hr-rule {
+    width: 90%;
+    margin: 0 auto;
+    display: inherit;
+    height: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d4d4d4;
+}
+header {
+    padding: 18px 40px;
+    box-shadow: 1px 5px 8px #0000000f;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+header a {
+    color: #4d1dce;
+    font-weight: 900;
+}
+
+header > div > span {
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #cacaca;
+    display: block;
+    border-radius: 12px;
+}
+
+.content-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-image {
+    height: 400px;
+    background: url("hero-image.jpg");
+    background-size: cover;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.content {
+    padding: 4rem;
+    background: #eeeff3;
+}
+
+/* =============================GRID=========================== */
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.hero {
+    background: #ffffff;
+}
+
+
+#hero-inline-form > input {
+    padding: 15px;
+    border: 1px solid #957fcf;
+    box-shadow: 1px 4px 3px  #0000000f;
+    border-radius: 6px;
+    width: 60%;
+}
+#hero-image {
+    height: 400px;
+    background: url("hero-image.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.article > div {
+    padding: 1rem;
+}
+
+#generator-form {
+    padding: 2rem;
+}
+
+#generator-form > form {
+    background: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 1px 4px 5px #00000012;
+}
+
+#generator-form > form > input, select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 25px 0px #00000014;
+}
+
+.checkboxes-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+}
+
+.main {
+    display: inline-block;
+    position: relative;
+    padding-left: 41px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #999999;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+input[type=radio] {
+    visibility: hidden;
+}
+
+.custom-chkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 1px 1px 5px #33333347;
+}
+.radio {
+    border-radius: 10000px;
+}
+.main:hover input ~ .custom-chkbox {
+    border-color: #6e4cc2;
+}
+
+.main input:checked ~ .custom-chkbox{
+    border-color: #6e4cc2;
+}
+
+.radio-subheading {
+    text-align: start;
+}
+
+.radio-btns {
+    display: flex;
+}
+
+#generator-form > form > textarea {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: none;
+    background: #f5f6f8;
+    border: none;
+}
+
+#generator-form > form > button{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background: #7d40ff;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0 80px #00000047;
+    height: 304px;
+}
+
+#one {
+    background: url("card1.jpg") no-repeat;
+    background-size: 105%;
+}
+
+#two {
+    background: url("card2.jpg");
+    background-size: 105%;
+}
+
+footer {
+    height: 4rem;
+    background: #d8d8d8;
+}
