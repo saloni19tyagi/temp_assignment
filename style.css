@@ -210,22 +210,23 @@ input[type=radio] {
 }
 
 .card {
-    margin: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 0 80px #00000047;
-    height: 304px;
+    float : left;
+    height: 300px ;
+    padding : 4px;
 }
 
 #one {
-    background: url("card1.jpg") no-repeat;
-    background-size: 105%;
+    border-radius: 5px ;
+    width: 100% ;
+    height: 100% ;
+    box-shadow: 1px 1px 5px #33333347;
 }
-
 #two {
-    background: url("card2.jpg");
-    background-size: 105%;
+    border-radius: 5px ;
+    width: 100% ;
+    height: 100% ;
+    box-shadow: 1px 1px 5px #33333347;
 }
-
 footer {
     height: 4rem;
     background: #d8d8d8;
