@@ -84,7 +84,6 @@ header > div > span {
     padding: 4rem;
     background: #eeeff3;
 }
-
 /* =============================GRID=========================== */
 .grid {
     display: grid;
@@ -232,6 +231,12 @@ footer {
     background: #d8d8d8;
 }
 .setsize {
-    width:500px;
+    width: 676px;
     height: 500px;
+    display: block;
+}
+
+.fixingAlignment {
+    align-items: center;
+    padding-left: 4rem; 
 }
