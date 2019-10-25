@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham', 'Gotham Book', Roboto, Arial, sans-serif;
+    color: #d8d8d8;
+    background: #080808;
+}
+
+input, button, textarea, select {
+    outline: none;
+    font-family: 'Gotham', 'Gotham Book', Roboto, Arial, sans-serif;
+    color: #d8d8d8;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pointer-ele {
+    cursor: pointer;
+}
+
+
+h1, h2 {
+    color: #d8d8d8;
+}
+
+.heading {
+    font-size: 3.4rem;
+}
+
+.subheading {
+    color: #4d1dce;
+}
+.custome-hr-rule {
+    width: 90%;
+    margin: 0 auto;
+    display: inherit;
+    height: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d8d8d8;
+}
+header {
+    padding: 18px 40px;
+    box-shadow: 1px 5px 8px #0000000f;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+header a {
+    color: #4d1dce;
+    font-weight: 900;
+}
+
+header > div > span {
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #d8d8d8;
+    display: block;
+    border-radius: 12px;
+}
+
+.content-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-image {
+    height: 400px;
+    background: url("hero-image.jpg");
+    background-size: cover;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.content {
+    padding: 4rem;
+    background: #080808;
+}
+
+/* =============================GRID=========================== */
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.hero {
+    background: #080808;
+}
+
+
+#hero-inline-form > input {
+    padding: 15px;
+    border: 1px solid #4d1dce;
+    box-shadow: 1px 4px 3px  #0000000f;
+    border-radius: 6px;
+    width: 60%;
+}
+#hero-image {
+    padding-left: 7rem;
+    height: 400px;
+    background: url("hero-image.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.article > div {
+    padding: 1rem;
+}
+
+#generator-form {
+    padding: 2rem;
+}
+
+#generator-form > form {
+    background: #121212;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 1px 4px 5px #00000012;
+    color: #d8d8d8;
+}
+
+#generator-form > form > input, select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    border: .4px #d8d8d8 solid;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 25px 0px #00000014;
+}
+
+.checkboxes-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+}
+
+.main {
+    display: inline-block;
+    position: relative;
+    padding-left: 41px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #d8d8d8;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+input[type=radio] {
+    visibility: hidden;
+}
+
+.custom-chkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    border: 1px solid #d0d0d0;
+    box-shadow: 1px 1px 5px #33333347;
+}
+.radio {
+    border-radius: 10000px;
+}
+.main:hover input ~ .custom-chkbox {
+    border-color: #4d1dce;
+}
+
+.main input:checked ~ .custom-chkbox{
+    border-color: #4d1dce;
+}
+
+.radio-subheading {
+    text-align: start;
+}
+
+.radio-btns {
+    display: flex;
+}
+
+#generator-form > form > textarea {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: none;
+    background: #000;
+    border: .4px #d8d8d8 solid;
+}
+
+#generator-form > form > button{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background: #4d1dce ;
+    margin-top: 20px;
+}
+
+.card {
+    float : left;
+    height: 81% ;
+    padding : 4px;
+}
+
+#one {
+    border-radius: 5px ;
+    width: 100% ;
+    height: 100% ;
+    box-shadow: 1px 1px 5px #33333347;
+}
+#two {
+    border-radius: 5px ;
+    width: 100% ;
+    height: 100% ;
+    box-shadow: 1px 1px 5px #33333347;
+}
+footer {
+    height: 4rem;
+    background: #080808;
+}
+footer>p {
+    padding: 20px;
+    text-align: right;
+}
